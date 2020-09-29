@@ -9,6 +9,9 @@
 
 ## Day 1
 
+### Tweets
+- https://twitter.com/bkowshik/status/1310809654591549440
+
 ### [Google Research Football with Manchester City F.C.](https://www.kaggle.com/c/google-football/)
 
 #### Submission
