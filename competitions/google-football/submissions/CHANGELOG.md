@@ -1,6 +1,12 @@
 # CHANGELOG
 
 
+## [1.2] - `2020-09-30`
+
+### Modified
+- Although, I wanted the player to shoot from far, instead the previous change did the opposite. Fixed it in this version.
+
+
 ## [1.1] - `2020-09-30`
 
 ### Modified
