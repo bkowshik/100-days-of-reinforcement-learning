@@ -1,5 +1,7 @@
-# Lecture 1. Introduction to Reinforcement Learning
+# [Lecture 1. Introduction to Reinforcement Learning](https://www.youtube.com/watch?v=2pWv7GOvuf0&list=PLqYmG7hTraZDM-OYHWgPebj2MfCFzFObQ&index=1&t=1779s)
 
+
+Source: https://www.davidsilver.uk/wp-content/uploads/2020/03/intro_RL.pdf
 
 
 
@@ -88,3 +90,52 @@ What we believe will happen next depends on our representation of state. So, the
 
 
 ## Inside an RL Agent
+An RL agent may include on or more of these main components:
+1. Policy
+    - Agents behavior function. It is a map from state of action or how the agent picks it actions.
+    - Deterministic policy.
+    - Stochastic policy: Probability of taking an action given in some state.
+2. Value function
+    - How good is each state and/or action, estimate how well we are doing in a particular situation.
+    - Prediction of expected future total reward and helps choose between action 1 and action 2.
+    - Horizon is given by the discount factor, every step we discount the reward a little more.
+    - The amount of reward we get depends on the policy.
+    - It's always about the future reward.
+3. Model
+    - Agents view or representation of the environment, predicts what the environment will do next.
+    - Transition model `P` will predict the next state of the environment, dynamics model.
+    - Reward model `R`predicts the next immediate reward.
+    - A lot of the course will focus on model-free methods, and thus this is not a requirement.
+
+
+### RL agent taxonomy
+Categorizing RL agents based on which of the 3 components the agent contains:
+- Value based if there is a value function and no policy (implicit).
+- Policy based if there is a policy function and no value function.
+- Actor critic combines both a policy and value function.
+- Model free agents have a policy and/or value function, no model or understanding of environment.
+- Model based starts with building a model and then use it
+
+![](../../static/images/rl-agent-taxonomy.png)
+
+
+
+
+## Problems with Reinforcement Learning
+- Two fundamental problems in sequential decision making.
+    - Learning
+        - The environment is initially unknown.
+        - The agent interacts with the environment.
+        - The agent improves it's policy.
+    - Planning
+        - A model of the environment is known.
+        - The agent performs computations with its model without any external interactions.
+        - The agents improves it's policy.
+- Exploration and exploitation
+    - Reinforcement learning is like trial-and-error learning.
+    - The agent should discover a good policy without loosing too much reward along the way.
+    - Exploration finds more information about the environment. Trying a new restaurant.
+    - Exploitation exploits known information to maximize reward. Go to your favorite restaurant.
+- Prediction and control
+    - Prediction: Given a policy, how much reward will I get?
+    - Control: What is the optimal policy to get the most reward.
