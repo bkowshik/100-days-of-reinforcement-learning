@@ -26,3 +26,12 @@
 ### Tackle at the future position
 - When a player tackles the opponent with a ball, that seems to happen at the older location of the opponent, a place the opponent has moved on from.
 - Instead, we want to attack the opponent at the potential future location.
+
+
+### Ability to detect and break loops in movement
+
+Source: https://www.kaggle.com/c/google-football/discussion/187381#1034619 from Taaha Khan
+
+> Not necessarily a bug, but an interesting thing that I found: in [this game](https://www.kaggle.com/c/google-football/submissions?dialog=episodes-episode-3657442), at around 0:35 time, the ball is right by the edge of bounds, and the agents are all confused as to what should be done (this loop was only broken when the second half reset). Maybe a sort of a clock should be put in place so that agents can't just stall out the rest of the game and force a win if they are ahead, sort of like a shot-clock in basketball.
+>
+> I recommend contestants to code in something that has the ability to detect and break loops in movement so that this issue can't be exploited in the game.
