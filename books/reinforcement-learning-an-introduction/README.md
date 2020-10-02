@@ -1,5 +1,7 @@
 # Reinforcement Learning: An Introduction
 
+Source: http://www.incompleteideas.net/book/the-book-2nd.html
+
 > Richard S. Sutton and Andrew G. Barto
 
 Systems that try to maximize something (whatever that might be) are qualitatively different from equilibrium-seeking systems, and he argued that maximizing systems hold the key to understanding important aspects of natural intelligence and for building artificial intelligences.
