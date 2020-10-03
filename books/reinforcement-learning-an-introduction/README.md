@@ -41,3 +41,30 @@ Beyond the agent and the environment, one can identify four main sub-elements of
     - Allows inferences to be made about how the environment will behave.
     - Models are used for planning, way of deciding on a course of action by considering possible future situations before they are actually experienced.
 
+### Limitations and Scope
+Think of the state as whatever information is available to the agent about its environment. Our concern in this book is not with designing the state signal, but with deciding what action to take as a function of whatever state signal is available. The policies that obtain the most reward, and random variations of them, are carried over to the next generation of policies, and the process repeats.
+
+How might we construct a player that will find the imperfections in its opponent's play and learn to maximize its chances of winning? A __minimax player__ would never reach a game state from which it could lose, even if in fact it always won from that state because of incorrect play by the opponent. About the best one can do on this problem is first to learn a model of the opponent’s behavior, up to some level of confidence, and then apply dynamic programming to compute an optimal solution given the approximate opponent model.
+
+### An Extended Example: Tic-Tac-Toe
+State A has higher value than state B, or is considered "better" than state B, if the current estimate of the probability of our winning from A is higher than it is from B. How well a reinforcement learning system can work in problems with such large state sets is intimately tied to how appropriately it can generalize from past experience. Reinforcement learning can be applied in either case. A model is not required, but models can easily be used if they are available or can be learned.
+
+> Reinforcement learning is a computational approach to understanding and automating goal-directed learning and decision making.
+
+The early history of reinforcement learning has two main threads:
+- Learning by trial and error.
+- Problem of optimal control and its solution using value functions and dynamic programming.
+- Temporal-difference methods.
+
+> Law of Effect.
+>
+> Of several responses made to the same situation, those which are accompanied or closely followed by satisfaction to the animal will, other things being equal, be more firmly connected with the situation, so that, when it recurs, they will be more likely to recur; those which are accompanied or closely followed by discomfort to the animal will, other things being equal, have their connections with that situation weakened, so that, when it recurs, they will be less likely to occur. The greater the satisfaction or discomfort, the greater the strengthening or weakening of the bond. (Thorndike, 1911, p. 244)
+
+To be considered a __reinforcer__, the strengthening or weakening must persist after the reinforcer is withdrawn; a stimulus that merely attracts an animal’s attention or that energizes its behavior without producing lasting changes would not be considered a reinforcer.
+
+> In a 1948 report, Alan Turing described a design for a __pleasure-pain system__ that worked along the lines of the Law of Effect:
+> >
+> When a configuration is reached for which the action is undetermined, a random choice for the missing data is made and the appropriate entry is made in the description, tentatively, and is applied. When a pain stimulus occurs all tentative entries are cancelled, and when a pleasure stimulus occurs they are all made permanent. (Turing, 1948)
+
+Networks use error information to update connection weights, but this misses the essential character of trial-and-error learning as selecting actions on the basis of evaluative feedback that does not rely on knowledge of what the correct action should be. Basic __credit-assignment problem__ for complex reinforcement learning systems: How do you distribute credit for success among the many decisions that may have been involved in producing it.
+
