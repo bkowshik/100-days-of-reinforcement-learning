@@ -18,3 +18,7 @@
 ### Competitions
 - [Google Research Football with Manchester City F.C.](https://www.kaggle.com/c/google-football/)
 - [Flatland: NeurIPS 2020 Competition: Multi-agent Reinforcement Learning on Trains](https://www.aicrowd.com/challenges/neurips-2020-flatland-challenge/)
+
+### Repositories
+- [Python replication for Sutton & Barto's book Reinforcement Learning: An Introduction (2nd Edition)](https://github.com/ShangtongZhang/reinforcement-learning-an-introduction)
+- [whirl: Whiteson Research Lab](https://github.com/oxwhirl)
