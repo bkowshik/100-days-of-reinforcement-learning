@@ -1,6 +1,12 @@
 # CHANGELOG
 
 
+## [1.3] - `2020-10-05`
+
+### Modified
+- Changed default action to `Sprint` from `Slide` per comments [here](https://www.kaggle.com/c/google-football/discussion/188762).
+
+
 ## [1.2] - `2020-09-30`
 
 ### Modified
