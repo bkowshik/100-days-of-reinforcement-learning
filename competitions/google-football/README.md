@@ -1,6 +1,11 @@
 # README
 
 
+![](../../static/images/gfootball-field.png)
+
+_Source: https://www.kaggle.com/c/google-football/discussion/189720_
+
+
 ## Improvements
 
 
